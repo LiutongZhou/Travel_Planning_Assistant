@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>NYC Taxi Trip Carpooling by LiutongZhou</title>
+    <title>Trip Planing Assitant</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,97 +11,36 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">NYC Taxi Trip Carpooling</h1>
-      <h2 class="project-tagline">Mining NYC Taxi Data and Maximize the Number of Carpooled Trips</h2>
+	<p><br><br><br><br></p>
+      <h1 class="project-name">Trip Planing Assitant</h1>
+      <h2 class="project-tagline">A Big Data Analytics Project</h2>
        <a href="https://LiutongZhou.github.io" class="btn">Home</a>
-	<a href="https://github.com/LiutongZhou/NYC-Taxi-Trip-Carpooling-Assistant/releases/tag/2.1" class="btn">Download the App</a>
-       <a href="https://github.com/LiutongZhou/NYC-Taxi-Trip-Carpooling-Assistant" class="btn">View on GitHub</a>     
+       <a href="https://github.com/LiutongZhou/Travel_Planning_Assistant" class="btn">View on GitHub</a>
+	   <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+<h1>
+<a id="Presentation" class="anchor" href="#Presentation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Presentation</h1>  
+<p><br><br></p>
+<p><iframe style="float:center" align="middle" width="700" height="400" src="https://www.youtube.com/embed/cQYM8tW7dcg" frameborder="10" allowfullscreen></iframe></p>
+
+<p><br><br><br><br></p>	   
+
+<h1>
+<a style="color:white" id="Report" class="anchor" href="docs/Travel_Planing_Assistant.pdf" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span>Report</a></h1>
+
+<p><a href="docs/Travel_Planing_Assistant.pdf"><img src="./templates/images/1.png" alt="Report" width="60%" height="100%" title="Report"></a></p>
+
+
+<p><br><br><br><br><br><br><br><br><br></p>
+<h1>
+<a style="color:white" id="Theteam" class="anchor" href="#Theteam" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span>The Team</a></h1>
+<p><img src="./templates/images/2.png" alt="The team" width="60%" height="60%" title="Theteam"></p>
+<p><br></p>
     </section>
 
-    <section class="main-content">
-      <h1>
-<a id="why-carpool" class="anchor" href="#why-carpool" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Why Carpool?</h1>
-<h2>
-<a id="Inspiration" class="anchor" href="#Inspiration" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Inspiration</h2>
-
-<p style="color:black">In a busy city like NYC, countless Taxi trips happen everyday. Imagine two people travel at the same time from the same place to the same destination, they can actually ride only one taxi insdead of two. </p>
-
-<p style="color:black">However, they don't know each other... They ride two taxis seperately.. And they make the roads more congested by adding a taxi on the network...</p>
-
-<h2>
-<a id="carpool-or-not-carpool" class="anchor" href="#carpool-or-not-carpool" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Carpool or Not Carpool?</h2>
-
-<p style="color:black">But is it necessary for travelers/comuters in NYC to carpool? Does Carpooling help improve the traffic condition?
-The following is person trips happened in the first week of June 2015.</p>
-
-<p><iframe src="https://liutongzhou.carto.com/viz/4ac75fd4-91cc-11e6-b987-0e3ebc282e83/embed_map" width="100%" height="520" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"></iframe></p>
-
-
-      <h1>
-<a id="how-to-carpool" class="anchor" href="#how-to-carpool" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to Carpool?</h1>
-      
-      <h2>
-<a id="where-to-start-with" class="anchor" href="#where-to-start-with" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Where to Start with?</h2>
-
-<p style="color:black">We analized the June 2016 <a href="http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml">NYC Taxi Trip Records</a> and find out:</p>
-
-<p><img src="https://liutongzhou.github.io/NYC-Taxi-Trip-Carpooling-Assistant/Visualization%20Results/3dhist.png"  width="70%" height="70%" alt="Distribution of Taxi Trips Count" align="middle" title="Distribution of Taxi Trips Count" >
-  
-<img src="https://liutongzhou.github.io/NYC-Taxi-Trip-Carpooling-Assistant/Visualization%20Results/Frequency.png" align="middle" width="65%" height="65%"  alt="Taxi Trip Frequency by Location" title="Taxi Trip Frequency by Location"></p>
-
-<p style="color:black">and we decided to focus on these <strong>Hot Areas</strong>, where there must be numerous taxi trips happening every day.
-</p>
-
-      <p><img src="https://liutongzhou.github.io/NYC-Taxi-Trip-Carpooling-Assistant/Visualization%20Results/Contour.png" align="middle" width="100%" height="100%" alt="Hot Areas" title="Hot Areas"></p>
-      
-<p style="color:black">So we choose this region for our test: 
-  
-  region range (40.74,-74) cross (40.77,-73.96), 
-  
-  time range: A busy morning on May 1 2015  </p>
-      
-
-<p><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d40664.391421040484!2d-73.9883519753519!3d40.75324876512131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m4!2s40.74%2C-74!3m2!1d40.739999999999995!2d-74!4m4!2s40.77%2C-73.96!3m2!1d40.769999999999996!2d-73.96!5e0!3m2!1sen!2sus!4v1479164439526" width="800" height="400" allowfullscreen="allowfullscreen"></iframe></p>
-
-<h2>
-<a id="how-to-maximize-the-total-number-of-carpooled-trips" class="anchor" href="#how-to-maximize-the-total-number-of-carpooled-trips" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to Maximize the Total number of Carpooled trips</h2>
-
-<p style="color:black">We have created <a href="https://liutongzhou.github.io/NYC-Taxi-Trip-Carpooling-Assistant/NYC_Taxi_Trips_Carpooling_Assistant/Model-carpool-matching-problem.pdf">an Integer Programming Model</a></p>
-      
-<h2>
-<a id="how-to-solve-the-model" class="anchor" href="#how-to-solve-the-model" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to Solve the Model</h2>
-
-<p style="color:black">We have created an NYC Taxi Trip Carpooling Assitant using Matlab, which can be downloaded from <a href="https://github.com/LiutongZhou/NYC-Taxi-Trip-Carpooling-Assistant/releases/tag/2.1">here</a>. </p>
-
-<p style="color:black">The source codes are published on Github</p>
-
-<p style="color:black">We used May 1 2016 records as the input data for this App. And the results are shown below:</p>
-
-<p><img src="https://liutongzhou.github.io/NYC-Taxi-Trip-Carpooling-Assistant/Visualization%20Results/Paired%20Taxi%20Trips%20Busiest%20Region.png" alt="Paired Trips" width="100%" height="110%", title="Paired Trips"></p>
-<p><img src="./Visualization%20Results/query.png" alt="Paired Trips" width="70%" height="70%", title="Query the 100th Paired Trips"></p>
-
-<h1>
-<a id="Practical-Meaning" class="anchor" href="#Practical-Meaning" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Practical Meaning</h1>
-<ul style="color:black">
-  <li>Save money</li>
-  <li>Reduce Emission</li>
-  <li>Save Energy</li>
-  <li>Protect Enviroment</li>
-</ul>
-
-<h1>
-<a id="Whats-Next" class="anchor" href="#Whats-Next" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Whats Next?</h1>
-<p style="color:black">One extension of the application is to add weights to the edges, for example if two people are often paired together they are a strong pair. Another extension is giving regular commuters priority to be paired.</p>
-
-
+    <section class="main-content">   
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/LiutongZhou/NYC-Taxi-Trip-Carpooling-Assistant">NYC Taxi Trip Carpooling</a> is maintained by <a href="https://github.com/LiutongZhou">LiutongZhou</a>.</span>
-
-        
+        <span class="site-footer-owner"><a href="https://github.com/LiutongZhou/Travel_Planning_Assistant">Travel Planing Assitant</a> is maintained by <a href="https://github.com/LiutongZhou">LiutongZhou</a>.</span>     
       </footer>
-
-    </section>
-
-  
+    </section> 
   </body>
 </html>
