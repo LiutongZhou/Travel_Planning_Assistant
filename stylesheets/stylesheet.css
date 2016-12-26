@@ -251,9 +251,12 @@ img {
     
 }
 
+iframe{
+width:70%;
+height:450px;}
 @media screen and (max-width: 800px)
 {
  iframe{
-width:100%;
-}
+width:80%;
+height:300px;}
 }
